@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!-- Head -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assigment #2</title>
+</head>
+
+<body>
+    <!-- Video -->
+    <p>
+        <h2>Lofi Hip Hop Radio</h2>
+        <iframe src="https://www.youtube.com/embed/jfKfPfyJRdk?si=XGR3mwFetAgP1XCJ">
+        </iframe>
+    </p>
+    <!-- Form -->
+    <form name="feedback">
+
+        <!-- Fieldset -->
+        <fieldset>
+            <!-- Survey Legend -->
+            <legend>Survey</legend>
+
+            <!-- First Name -->
+            <p>First Name: <input type="text" placeholder="anonymous" name="fname" required></p>
+
+            <!-- Last Name -->
+            <p>Last Name: <input type="text" placeholder="anonymous" name="lname" required></p>
+
+            <!-- Email -->
+            <p>Email Address: <input type="email" placeholder="name@domain.com" name="mail"></p>
+
+            <!-- Radio -->
+            <p>
+                Do you recommend this website?
+                <input type="radio" name="yes" value="yes">Yes
+                <input type="radio" name="no" value="no">No
+            </p>
+
+            <!-- Selection Box -->
+            <p>
+                <h3>Favorite Website?</h3>
+            </p>
+            <p>
+                <select name="websites">
+                    <option value="none">None</option>
+                    <option value="google">Google</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="twitter">Twitter or X</option>
+                    <option value="time">Time</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+
+            <!-- Range -->
+            <p>
+                <h3>Rate this website:</h3>
+            </p>
+            <p>1<input type="range" name="rating">10</p>
+
+        </fieldset>
+
+        <!-- Comments -->
+        <p>
+        <h3>Additional Comments:</h3>
+        </p>
+        <p><textarea name="comment" cols="30" rows="10" maxlength="500" placeholder="500 max word count"></textarea></p>
+
+        <!-- Submit Button -->
+        <p><input type="submit" value="submit" name="submit"></p>
+    </form>
+</body>
+
+</html>
