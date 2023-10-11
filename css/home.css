@@ -42,12 +42,13 @@ div.assignment a, #contact a{
     color: black;
     background-color: orange;
 }
-div.navbar a:hover{
-    text-decoration: none;
+a:hover{
     font-size: 1.2em;
     text-indent: -100px;
 }
-
+a{
+    text-decoration: none;
+}
 /* Navbar */
 div.navbar{
     position: fixed;
@@ -159,7 +160,7 @@ div.portfolio p{
 #contact h1{
     font-size: 1em;
     transform: translate(10px, 0);
-    width: 120px;
+    width: 100px;
     padding: 5px;
     background-image: url(../img/blue-abstract-water-waves-background_464314-5945.avif);
 }
