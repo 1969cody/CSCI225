@@ -1,0 +1,211 @@
+/* Root */
+:root{
+    
+
+}
+
+/* Body */
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 50;
+    background-image: url(../img/milad-fakurian-PGdW_bHDbpI-unsplash.jpg);
+    background-size: 120%;
+
+}
+
+/* General Text */
+h1{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: rgb(11, 174, 239) 0.1em 0.1em 0.2em;
+    border: 10px solid;
+    border-image: url(../img/blue-abstract-water-waves-background_464314-5945.avif) 30 round;
+    transition: all 3s ease-in-out;
+}
+h1:hover{
+    transform: rotate(360deg);
+}
+
+/* General Paragraph */
+p{
+    line-height: 30px;
+    text-align: left;
+}
+p::first-letter{
+    font-size: 1.2em;
+    font-family: 'Water Brush', cursive;
+}
+
+/* Links */
+div.assignment a, #contact a{
+    color: black;
+    background-color: orange;
+}
+div.navbar a:hover{
+    text-decoration: none;
+    font-size: 1.2em;
+    text-indent: -100px;
+}
+
+/* Navbar */
+div.navbar{
+    position: fixed;
+    transform: translate(168px, -10px);
+    z-index: 3;
+    background-image: url(../img/milad-fakurian-PGdW_bHDbpI-unsplash.jpg);
+    height: 70px;
+    width: 925px;
+}
+div.navbar ul{
+    list-style: none;
+
+}
+div.navbar li{
+    margin: 0 2px;
+    float: left;
+    padding: 5px;
+    border: 3.5px solid orange;
+    border-radius: 35px;
+}
+
+/* Introduction */
+div.introduction{
+    position: fixed;
+    top:10%;
+    width: 925px;
+    transform: translate(168px, 0);
+    background-image: url(../img/milad-fakurian-PGdW_bHDbpI-unsplash.jpg);
+    background-size: 1050px;
+    z-index: 3;
+}
+div.introduction h1{
+    width: 300px;
+    padding: 5px;
+    background-image: url(../img/blue-abstract-water-waves-background_464314-5945.avif);
+    transform: translate(300px, 0);
+}
+div.introduction img{
+    float: left;
+    width: 20%; 
+    height: 50%;
+    transform: translate(200px, -30px);
+}
+div.introduction p{
+    float: left;
+    width: 50%;
+    transform: translate(50px, -20px);
+}
+
+/* Assignment */
+div.assignment{
+    position: absolute;
+    height: 160vh;
+    background-image: url(../img/abstract-photography-design-feature-1280x720.webp);
+    opacity: 0.8;
+    left: 0;
+    top: 0;
+    padding-top: 30px;
+    border-left: 3px solid yellow;
+    border-bottom: 3px solid yellow;
+
+}
+div.assignment h1{
+    font-size: 1em;
+    transform: translate(10px, 0);
+    width: 120px;
+    padding: 5px;
+    background-image: url(../img/blue-abstract-water-waves-background_464314-5945.avif);
+}
+div.assignment li{
+    list-style: none;
+    transform: translate(-20px, 0);
+}
+
+/* Portfolio */
+div.portfolio{
+    position: absolute;
+    transform: translate(250px, 350px);
+    width: 60%;
+    z-index: 2;
+    }
+div.portfolio h1{
+    width: 210px;
+    padding: 5px;
+    background-image: url(../img/blue-abstract-water-waves-background_464314-5945.avif);
+}
+div.portfolio ol{
+    border-right: 3px solid yellow;
+    border-bottom: 3px solid yellow;
+}
+div.portfolio p{
+    box-shadow: 10px 5px 5px orchid;
+    border: 1px solid;
+    text-align: center;
+}
+
+/* Contact address */
+#contact{
+    position: absolute;
+    height: 160vh;
+    background-image: url(../img/abstract-photography-design-feature-1280x720.webp);
+    opacity: 0.8;
+    right: 0;
+    top: 0;
+    padding-top: 30px;
+    border-right: 3px solid yellow;
+    border-bottom: 3px solid yellow;
+}
+#contact h1{
+    font-size: 1em;
+    transform: translate(10px, 0);
+    width: 120px;
+    padding: 5px;
+    background-image: url(../img/blue-abstract-water-waves-background_464314-5945.avif);
+}
+
+/* Schedule */
+div.schedule{
+    position: absolute;
+    transform: translate(250px, 700px);
+    z-index: 2;
+    padding-bottom: 10px;
+}
+div.schedule h1{
+    width: 200px;
+    padding: 5px;
+    background-image: url(../img/blue-abstract-water-waves-background_464314-5945.avif);
+}
+div.schedule table{
+    border: 1px solid blue;
+    border-right: 3px solid yellow;
+    border-bottom: 3px solid yellow;
+    vertical-align: baseline;
+    empty-cells: show;
+    padding: 5px;
+}
+div.schedule tr:nth-child(2n){
+    background-color: orchid;
+}
+/* Footer */
+footer{
+    position: fixed;
+    transform: translate(-10px, 620px);
+    background-color: orange;
+    width: 10%;
+    z-index: 3;
+}
+footer p{
+    text-align: center;
+}
+footer:active{
+    animation: 5s running infinite colors;
+    background: linear-gradient(blue, blueviolet, purple, orchid, pink);
+}
+@keyframes colors{
+    from{background-image: linear-gradient(blueviolet, purple, orchid, pink, blue);}
+    30%{background-image: linear-gradient(purple, orchid, pink, blue, blueviolet);}
+    50%{background-image: linear-gradient(orchid, pink, blue, blueviolet, purple);}
+    70%{background-image: linear-gradient(pink, blue, blueviolet, purple, orchid);}
+    90%{background-image: linear-gradient(blue, blueviolet, purple, orchid, pink);}
+}
