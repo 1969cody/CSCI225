@@ -191,7 +191,7 @@ div.schedule tr:nth-child(2n){
 /* Footer */
 footer{
     position: fixed;
-    transform: translate(-10px, 620px);
+    transform: translate(-10px, 1000%);
     background-color: orange;
     width: 10%;
     z-index: 3;
