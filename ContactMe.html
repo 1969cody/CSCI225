@@ -4,76 +4,140 @@
 <!-- Head -->
 
 <head>
+    <!-- BootStrap CSS -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Title -->
     <title>Assigment #2</title>
 </head>
 
 <body>
-    <!-- Video -->
-    <p>
-        <h2>Lofi Hip Hop Radio</h2>
-        <iframe src="https://www.youtube.com/embed/jfKfPfyJRdk?si=XGR3mwFetAgP1XCJ">
-        </iframe>
-    </p>
-    <!-- Form -->
-    <form name="feedback">
 
-        <!-- Fieldset -->
-        <fieldset>
-            <!-- Survey Legend -->
-            <legend><h2><b>Feedback</b></h2></legend>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Navbar -->
+                <div class="navbar navbar-expand-lg navbar-light bg-black">
+                    <ul class="navbar-nav">
+                        <!-- USCA -->
+                        <li class="nav-item text-center"><a class="nav-link text-white" href="https://www.usca.edu/">USCA Main Website</a></li>
+                        <!-- Assignment -->
+                        <li class="nav-item text-center"><a class="nav-link text-white" href="index.html#assignment">Assignment Section</a></li>
+                        <!-- Contact -->
+                        <li class="nav-item text-center"><a class="nav-link text-white" href="index.html#contact">Contact Information Section</a></li>
+                        <!-- GitHub -->
+                        <li class="nav-item text-center"><a class="nav-link text-white" href="https://github.com/">GitHub Main Website</a></li>
+                        <!-- Schedule -->
+                        <li class="nav-item text-center"><a class="nav-link text-white" href="index.html#schedule">Schedule Information</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <!-- Video -->
+                <p>
+                <h2>Lofi Hip Hop Radio</h2>
+                <iframe class="border rounded" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=XGR3mwFetAgP1XCJ" height="900" width="500">
+                </iframe>
+                </p>
+            </div>
+            <div class="col">
+                <!-- Form -->
+                <form name="feedback">
 
-            <!-- First Name -->
-            <p>First Name: <input type="text" placeholder="anonymous" name="fname" required></p>
+                    <!-- Fieldset -->
+                    <fieldset>
+                        <!-- Survey Legend -->
+                        <legend>
+                            <h2><b>Feedback</b></h2>
+                        </legend>
 
-            <!-- Last Name -->
-            <p>Last Name: <input type="text" placeholder="anonymous" name="lname" required></p>
+                        <!-- First Name -->
+                        <div class="form-floating mb-3">
+                        <input class="form-control" type="text" placeholder="anonymous" name="fname" required id="name">
+                        <label for="name">First Name:</label>
+                        </div>
 
-            <!-- Email -->
-            <p>Email Address: <input type="email" placeholder="name@domain.com" name="mail"></p>
+                        <!-- Last Name -->
+                        <div class="form-floating mb-3">
+                        <input class="form-control" type="text" placeholder="anonymous" name="lname" required id="lastname">
+                        <label for="lastname">Last Name:</label>
+                        </div>
 
-            <!-- Radio -->
-            <p>
-                Do you recommend this website?
-                <input type="radio" name="yes" value="yes">Yes
-                <input type="radio" name="no" value="no">No
-            </p>
+                        <!-- Email -->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="email" placeholder="name@domain.com" name="mail" id="email">
+                            <label for="email">Email: </label>
+                            <small class="form-text ">
+                                Your email will not be shared.
+                            </small>
+                        </div>
 
-            <!-- Selection Box -->
-            <p>
-                <h3>Favorite website?</h3>
-            </p>
-            <p>
-                <select name="websites">
-                    <option value="none">None</option>
-                    <option value="google">Google</option>
-                    <option value="facebook">Facebook</option>
-                    <option value="twitter">Twitter or X</option>
-                    <option value="time">Time</option>
-                    <option value="other">Other</option>
-                </select>
-            </p>
+                        <!-- Radio -->
+                        <div class="form-group">
+                        <p>
+                            Do you recommend this website?
+                            <label class="form-check"><input class="form-check-input" type="radio" name="yes" value="yes">Yes</label>
+                            <label class="form-check"><input class="form-check-input" type="radio" name="no" value="no">No</label>
+                        </p>
+                        </div>
 
-            <!-- Range -->
-            <p>
-                <h3>Rate this website:</h3>
-            </p>
-            <p>1<input type="range" name="rating">10</p>
+                        <!-- Selection Box -->
+                        <p>
+                        <h3>Favorite website?</h3>
+                        </p>
+                        <p>
+                            <select class="form-select" name="websites">
+                                <option selected value="none" class="fw-normal">None</option>
+                                <option value="google" class="fw-normal">Google</option>
+                                <option value="facebook" class="fw-normal">Facebook</option>
+                                <option value="twitter" class="fw-normal">Twitter or X</option>
+                                <option value="time" class="fw-normal">Time</option>
+                                <option value="other" class="fw-normal">Other</option>
+                            </select>
+                        </p>
 
-            <!-- Submit and Clear Button -->
-            <p>
-                <input type="submit" value="submit" name="submit">
-                <input type="reset" value="clear" name="clear">
-            </p>
-        </fieldset>
+                        <!-- Range -->
+                        <div class="form-group">
+                        <p>
+                        <h3>Rate this website:</h3>
+                        </p>
+                        <input class="form-range" type="range" name="rating" min="0" max="9">
+                        </div>
 
-        <!-- Comments -->
-        <p>
-        <h3>Additional Comments:</h3>
-        </p>
-        <p><textarea name="comment" cols="30" rows="10" maxlength="500" placeholder="500 max word count"></textarea></p>
+                        <!-- Line Break -->
+                        <br>
 
-    </form>
+                        <!-- Submit and Clear Button -->
+                        <div class="form-group">
+                        <p>
+                            <input class="form-control" type="submit" value="submit" name="submit">
+                            <input class="form-control" type="reset" value="clear" name="clear">
+                        </p>
+                        </div>
+                    </fieldset>
+
+                    <!-- Comments -->
+                    <div class="form-group">
+                    <p>
+                    <h3>Additional Comments:</h3>
+                    </p>
+                    <p><textarea class="form-control" name="comment" cols="30" rows="10" maxlength="500"
+                            placeholder="500 max word count"></textarea>
+                    </p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- BootStrap JavaScript File -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
